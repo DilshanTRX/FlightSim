@@ -1,0 +1,49 @@
+============================= test session starts =============================
+platform win32 -- Python 3.10.5, pytest-8.4.2, pluggy-1.6.0 -- C:\Python310\python.exe
+cachedir: .pytest_cache
+rootdir: d:\FlightSim
+plugins: anyio-4.11.0, cov-7.0.0
+collecting ... collected 39 items
+
+tests/test_atc_engine.py::test_altitude_in_range PASSED                  [  2%]
+tests/test_atc_engine.py::test_speed_in_range PASSED                     [  5%]
+tests/test_atc_engine.py::test_heading_change_within_limit PASSED        [  7%]
+tests/test_atc_engine.py::test_altitude_snapped_to_1000 PASSED           [ 10%]
+tests/test_atc_engine.py::test_speed_snapped_to_10 PASSED                [ 12%]
+tests/test_atc_engine.py::test_phrase_contains_callsign PASSED           [ 15%]
+tests/test_atc_engine.py::test_phrase_contains_station PASSED            [ 17%]
+tests/test_atc_engine.py::test_phrase_ends_with_period PASSED            [ 20%]
+tests/test_atc_engine.py::test_different_from_last_instruction PASSED    [ 23%]
+tests/test_number_words.py::TestSpokenAltitude::test_six_thousand PASSED [ 25%]
+tests/test_number_words.py::TestSpokenAltitude::test_three_thousand PASSED [ 28%]
+tests/test_number_words.py::TestSpokenAltitude::test_ten_thousand PASSED [ 30%]
+tests/test_number_words.py::TestSpokenAltitude::test_two_thousand PASSED [ 33%]
+tests/test_number_words.py::TestSpokenAltitude::test_snaps_to_nearest_100 PASSED [ 35%]
+tests/test_number_words.py::TestSpokenAltitude::test_three_thousand_five_hundred PASSED [ 38%]
+tests/test_number_words.py::TestSpokenSpeed::test_two_four_zero PASSED   [ 41%]
+tests/test_number_words.py::TestSpokenSpeed::test_two_zero_zero PASSED   [ 43%]
+tests/test_number_words.py::TestSpokenSpeed::test_two_eight_zero PASSED  [ 46%]
+tests/test_number_words.py::TestSpokenHeading::test_one_eight_zero PASSED [ 48%]
+tests/test_number_words.py::TestSpokenHeading::test_zero_zero_five PASSED [ 51%]
+tests/test_number_words.py::TestSpokenHeading::test_three_six_zero PASSED [ 53%]
+tests/test_number_words.py::TestSpokenHeading::test_zero_nine_zero PASSED [ 56%]
+tests/test_number_words.py::TestParseSpokenNumber::test_digit_sequence PASSED [ 58%]
+tests/test_number_words.py::TestParseSpokenNumber::test_altitude_phrase PASSED [ 61%]
+tests/test_number_words.py::TestParseSpokenNumber::test_bare_integer PASSED [ 64%]
+tests/test_number_words.py::TestParseSpokenNumber::test_one_eight_zero PASSED [ 66%]
+tests/test_number_words.py::TestParseSpokenNumber::test_niner_alias PASSED [ 69%]
+tests/test_number_words.py::TestExtractNumbers::test_finds_altitude_and_heading PASSED [ 71%]
+tests/test_number_words.py::TestExtractNumbers::test_finds_bare_numbers PASSED [ 74%]
+tests/test_number_words.py::TestExtractNumbers::test_callsign_number PASSED [ 76%]
+tests/test_readback_validator.py::test_correct_spoken_readback PASSED    [ 79%]
+tests/test_readback_validator.py::test_correct_numeric_readback PASSED   [ 82%]
+tests/test_readback_validator.py::test_missing_altitude PASSED           [ 84%]
+tests/test_readback_validator.py::test_missing_speed PASSED              [ 87%]
+tests/test_readback_validator.py::test_missing_heading PASSED            [ 89%]
+tests/test_readback_validator.py::test_empty_readback PASSED             [ 92%]
+tests/test_readback_validator.py::test_none_readback PASSED              [ 94%]
+tests/test_readback_validator.py::test_wrong_altitude PASSED             [ 97%]
+tests/test_readback_validator.py::test_heading_tolerance PASSED          [100%]
+
+============================= 39 passed in 0.11s ==============================
+

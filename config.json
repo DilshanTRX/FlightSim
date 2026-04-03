@@ -1,0 +1,17 @@
+{
+  "simulator": "FSX",
+  "callsign": "SriLankan 112",
+  "station": "Colombo Tower",
+  "altitude_range": [2000, 10000],
+  "speed_range": [200, 280],
+  "heading_change_max": 60,
+  "altitude_tolerance_ft": 200,
+  "speed_tolerance_kts": 10,
+  "heading_tolerance_deg": 5,
+  "compliance_timeout_sec": 120,
+  "tts_rate": 150,
+  "tts_voice": "auto",
+  "speech_recognition_backend": "google",
+  "listen_timeout_sec": 15,
+  "max_readback_attempts": 3
+}
